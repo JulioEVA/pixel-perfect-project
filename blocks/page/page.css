@@ -1,0 +1,9 @@
+.page {
+  background-image: linear-gradient(to bottom, #f0f5f9, #d7e4ed);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}

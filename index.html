@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Olympics Analytics</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1 class="header__title text">
+        Los Juegos Olímpicos y sus estadísticas
+      </h1>
+      <p class="header__subtitle text">
+        En un escenario global donde los Juegos Olímpicos despiertan emociones y
+        un sentido de unidad en personas de todos los rincones del mundo, existe
+        un vínculo menos obvio pero igualmente fascinante: la conexión entre el
+        rendimiento olímpico de una nación y su Producto Interno Bruto (PIB). A
+        medida que los atletas compiten en el escenario mundial, ¿podría haber
+        un patrón que relacione el éxito olímpico con la prosperidad económica?
+      </p>
+    </header>
+    <main class="content">
+      <section class="country-wealth">
+        <h2 class="country-wealth__title text title">Winter Winners</h2>
+        <p class="country-wealth__paragraph text">
+          La primera parte de esta historia nos lleva a través de los Juegos
+          Olímpicos pasados, donde vemos a naciones que han obtenido
+          impresionantes medallas de oro, plata y bronce. Sin embargo, surge una
+          pregunta intrigante: ¿Existe una correlación entre estas victorias y
+          el PIB de sus respectivos países? A medida que exploramos los datos y
+          analizamos los logros deportivos junto con los indicadores económicos,
+          comenzamos a ver indicios de que un mayor PIB a menudo coincide con
+          una mayor capacidad para invertir en instalaciones deportivas de
+          vanguardia y programas de entrenamiento de élite.
+        </p>
+        <div class="country-wealth__graph">
+          <canvas id="total-medals__winter"></canvas>
+          <canvas id="gold-medals__winter"></canvas>
+          <canvas id="silver-medals__winter"></canvas>
+          <canvas id="bronze-medals__winter"></canvas>
+        </div>
+      </section>
+      <section class="medals">
+        <h2 class="medals__title text title">Summer Winners</h2>
+        <div class="medals__graph">
+          <canvas id="total-medals__summer"></canvas>
+          <canvas id="gold-medals__summer"></canvas>
+          <canvas id="silver-medals__summer"></canvas>
+          <canvas id="bronze-medals__summer"></canvas>
+        </div>
+      </section>
+      <section class="correlation">
+        <h2 class="correlation__title text title">
+          Correlación entre los países PIB y medallas ganadas
+        </h2>
+        <p class="correlation__paragraph text">
+          Despues de un exhaustivo estudio con los archivos se pueden mencionar
+          las siguientes conclusiones: El numero de medallas aumentó en las
+          olimpiadas de invierno y de verano, de forma gradual. Desde 1960 hasta
+          2014, las medallas en las olimpiadas de invierno aumentaron de 150 a
+          600 por evento. De igual manera, desde 1960 hasta 2012, los premios de
+          las olimpiadas de verano aumentaron de 800 hasta más de 2500. Los
+          paises con más medallas en total en los olímpicos de verano: Estados
+          Unidos, Rusia, Alemania, Australia y China. Los paises con más
+          medallas en total en los olímpicos de invierno: Rusia, Alemania,
+          Canada, Estado Unidos y Finlandia. Los paises con más medallas en
+          total en ambos eventos olímpicos son: Estados Unidos, Rusia, Alemania,
+          Australia e Italia Estados Unidos es el país con más medallas, pero no
+          siempre tiene buenos resultados. En las olimpiadas de invierno tiene
+          un desempeño medio. Donde destaca más su participación en las
+          olimpiadas de verano, donde hay mas eventos. Hay una correlación
+          directamente proporcional de 0.69 entre el número de medallas y el
+          GDP. Por consiguiente, si hay una relación mediana entre el GDP y las
+          medallas ganadas. En conclusión, la riqueza de un pais en la mayoría
+          de las ocasiones juega un rol importante en el desempeño de los
+          atletas; pero no se deben destacar elementos que no se midieron en
+          este estudio, como la geografía y el espiritu deportivo. Esto se puede
+          apreciar en el caso de paises como Rusia, historicamente tiene más
+          medallas en las olimpiadas de invierno, pero su GDP es bajo en
+          comparación de otros paises.
+        </p>
+        <div class="correlation__graph">
+          <canvas id="correlation__graph_gdp"></canvas>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./grafica.js"></script>
+  </body>
+</html>
