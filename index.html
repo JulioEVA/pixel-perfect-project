@@ -22,7 +22,6 @@
     </header>
     <main class="content">
       <section class="country-wealth">
-        <h2 class="country-wealth__title text title">Winter Winners</h2>
         <p class="country-wealth__paragraph text">
           La primera parte de esta historia nos lleva a través de los Juegos
           Olímpicos pasados, donde vemos a naciones que han obtenido
@@ -34,55 +33,140 @@
           una mayor capacidad para invertir en instalaciones deportivas de
           vanguardia y programas de entrenamiento de élite.
         </p>
-        <div class="country-wealth__graph">
-          <canvas id="total-medals__winter"></canvas>
-          <canvas id="gold-medals__winter"></canvas>
-          <canvas id="silver-medals__winter"></canvas>
-          <canvas id="bronze-medals__winter"></canvas>
-        </div>
       </section>
       <section class="medals">
-        <h2 class="medals__title text title">Summer Winners</h2>
+        <hr class="separator" />
         <div class="medals__graph">
+          <h2 class="medals__title text title">
+            Total de medallas en invierno
+          </h2>
+          <canvas id="total-medals__winter"></canvas>
+          <p class="medals__paragraph text">
+            Se puede apreciar que Rusia es el país con más medallas,
+            aproximadamente más de 600, en el periodo de 1960 a 2014. El
+            siguiente país más medallero es Alemania con más de 500 medallas. En
+            tercer lugar, se debate entre Canada y Estados Unidos con un poco
+            más de 500 medallas.
+          </p>
+          <h2 class="medals__title text title">
+            Total de medallas de oro en invierno
+          </h2>
+          <canvas id="gold-medals__winter"></canvas>
+          <p class="medals__paragraph text">
+            El país con mas medallas de oro en los olimpicos de invierno es
+            Rusia con más de 300 medalla. Continua en segundo lugar Canada con
+            aproximadamente 250 medallas. En tercer lugar, se encuentra Alemania
+            con un poco más de 200 medallas.
+          </p>
+          <h2 class="medals__title text title">
+            Total de medallas de plata en invierno
+          </h2>
+          <canvas id="silver-medals__winter"></canvas>
+          <p class="medals__paragraph text">
+            El país con mas medallas de plata en los olimpicos de invierno es
+            Estados Unidos con más de 200 medallas. Continua en segundo lugar
+            Alemania con aproximadamente 200 medallas. En tercer lugar, se
+            encuentra Canada con un poco menos de 200 medallas.
+          </p>
+          <h2 class="medals__title text title">
+            Total de medallas de bronce en invierno
+          </h2>
+          <canvas id="bronze-medals__winter"></canvas>
+          <p class="medals__paragraph text">
+            El país con mas medallas de bronce en los olimpicos de invierno es
+            Finlandia con más de 200 medalla. Continua en segundo lugar Alemania
+            con aproximadamente 175 medallas. En tercer lugar, se encuentra
+            Rusia con un poco menos de 175 medallas.
+          </p>
+        </div>
+
+        <div class="medals__graph">
+          <h2 class="medals__title text title">Total de medallas en verano</h2>
           <canvas id="total-medals__summer"></canvas>
+          <p class="medals__paragraph text">
+            Se puede apreciar que Estado Unidos es el país con más medallas,
+            aproximadamente 3,000, en el periodo de 1960 a 2012. El siguiente
+            país más medallero es Rusia con un poco más de 2,500 medallas. En
+            tercer lugar, queda Alemania con un poco más de 2,000 medallas.
+          </p>
+          <h2 class="medals__title text title">
+            Total de medallas de oro en verano
+          </h2>
           <canvas id="gold-medals__summer"></canvas>
+          <p class="medals__paragraph text">
+            Se puede observar que Estados Unidos es el país con más medallas de
+            oro en las olimpiadas con un poco más de 1,400 medallas de oro.
+            Despues, Rusia con un poco menos de 1,000 medallas. En tercer lugar,
+            se encuentra Alemania con un poco menos de 800 medallas de oro.
+          </p>
+          <h2 class="medals__title text title">
+            Total de medallas de plata en verano
+          </h2>
           <canvas id="silver-medals__summer"></canvas>
+          <p class="medals__paragraph text">
+            Se puede observar que Estados Unidos es el país con más medallas de
+            plata en las olimpiadas de verano con un poco más de 800 medallas de
+            plata. Despues, Rusia con un poco menos de 800 medallas. En tercer
+            lugar, se encuentra Alemania con un poco más de 600 medallas de
+            plata.
+          </p>
+          <h2 class="medals__title text title">
+            Total de medallas de bronce en verano
+          </h2>
           <canvas id="bronze-medals__summer"></canvas>
+          <p class="medals__paragraph text">
+            Se puede observar que Rusia es el país con más medallas de bronce en
+            las olimpiadas de verano con aproximadamente 800 medallas de bronce.
+            Despues, Estados Unidos más de 700 medallas. En tercer lugar, se
+            encuentra Alemania con aproximadamente 700 medallas.
+          </p>
         </div>
       </section>
       <section class="correlation">
         <h2 class="correlation__title text title">
-          Correlación entre los países PIB y medallas ganadas
+          Correlación entre el GDP de los países y las medallas ganadas
         </h2>
+        <canvas id="correlation__graph_gdp"></canvas>
         <p class="correlation__paragraph text">
+          El grafico muestra la cantidad de medallas por país con respecto al
+          GDP. Estados Unidos es el país con mayor GDP y cantidad de medallas.
+          En segundo lugar con más medallas sigue Rusia, pero s epuede apreciar
+          que su GDP no es tan alto con respecto a otros paises, incluso
+          Alemania con mayor GDP tiene menos medallas.
+        </p>
+      </section>
+      <section class="conclusion">
+        <h2 class="title text">Conclusiones</h2>
+        <p class="conclusion__paragraph text">
           Despues de un exhaustivo estudio con los archivos se pueden mencionar
           las siguientes conclusiones: El numero de medallas aumentó en las
           olimpiadas de invierno y de verano, de forma gradual. Desde 1960 hasta
           2014, las medallas en las olimpiadas de invierno aumentaron de 150 a
           600 por evento. De igual manera, desde 1960 hasta 2012, los premios de
-          las olimpiadas de verano aumentaron de 800 hasta más de 2500. Los
-          paises con más medallas en total en los olímpicos de verano: Estados
-          Unidos, Rusia, Alemania, Australia y China. Los paises con más
+          las olimpiadas de verano aumentaron de 800 hasta más de 2500.
+        </p>
+        <p class="conclusion__paragraph text">
+          Los paises con más medallas en total en los olímpicos de verano:
+          Estados Unidos, Rusia, Alemania, Australia y China. Los paises con más
           medallas en total en los olímpicos de invierno: Rusia, Alemania,
           Canada, Estado Unidos y Finlandia. Los paises con más medallas en
           total en ambos eventos olímpicos son: Estados Unidos, Rusia, Alemania,
           Australia e Italia Estados Unidos es el país con más medallas, pero no
           siempre tiene buenos resultados. En las olimpiadas de invierno tiene
           un desempeño medio. Donde destaca más su participación en las
-          olimpiadas de verano, donde hay mas eventos. Hay una correlación
-          directamente proporcional de 0.69 entre el número de medallas y el
-          GDP. Por consiguiente, si hay una relación mediana entre el GDP y las
-          medallas ganadas. En conclusión, la riqueza de un pais en la mayoría
-          de las ocasiones juega un rol importante en el desempeño de los
-          atletas; pero no se deben destacar elementos que no se midieron en
-          este estudio, como la geografía y el espiritu deportivo. Esto se puede
-          apreciar en el caso de paises como Rusia, historicamente tiene más
-          medallas en las olimpiadas de invierno, pero su GDP es bajo en
-          comparación de otros paises.
+          olimpiadas de verano, donde hay mas eventos.
         </p>
-        <div class="correlation__graph">
-          <canvas id="correlation__graph_gdp"></canvas>
-        </div>
+        <p class="conclusion__paragraph text">
+          Hay una correlación directamente proporcional de 0.69 entre el número
+          de medallas y el GDP. Por consiguiente, si hay una relación mediana
+          entre el GDP y las medallas ganadas. En conclusión, la riqueza de un
+          pais en la mayoría de las ocasiones juega un rol importante en el
+          desempeño de los atletas; pero no se deben destacar elementos que no
+          se midieron en este estudio, como la geografía y el espiritu
+          deportivo. Esto se puede apreciar en el caso de paises como Rusia,
+          historicamente tiene más medallas en las olimpiadas de invierno, pero
+          su GDP es bajo en comparación de otros paises.
+        </p>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

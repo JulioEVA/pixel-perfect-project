@@ -1,15 +1,15 @@
 const winter = {
   country: {
-    0: "russia",
-    1: "sweden",
-    2: "finland",
-    3: "united states",
-    4: "canada",
-    5: "czech republic",
-    7: "norway",
-    10: "austria",
-    11: "switzerland",
-    16: "germany",
+    0: "Rusia",
+    1: "Suecia",
+    2: "Finlandia",
+    3: "Estados Unidos",
+    4: "Canadá",
+    5: "Chequia",
+    7: "Noruega",
+    10: "Austria",
+    11: "Suiza",
+    16: "Alemania",
   },
   gold: {
     0: "318",
@@ -62,16 +62,16 @@ const winter = {
 };
 const summer = {
   country: {
-    0: "united kingdom",
-    1: "united states",
-    2: "russia",
-    4: "australia",
-    5: "japan",
-    9: "hungary",
-    10: "italy",
-    11: "france",
-    53: "germany",
-    67: "china",
+    0: "Reino Unido",
+    1: "Estados Unidos",
+    2: "Rusia",
+    4: "Australia",
+    5: "Japón",
+    9: "Hungría",
+    10: "Italia",
+    11: "Francia",
+    53: "Alemania",
+    67: "China",
   },
   gold: {
     0: "192",
@@ -124,16 +124,16 @@ const summer = {
 };
 const gdp = {
   country: {
-    14: "brazil",
-    18: "canada",
-    20: "china",
-    37: "france",
-    40: "germany",
-    49: "india",
-    55: "italy",
-    57: "japan",
-    121: "united kingdom",
-    122: "united states",
+    14: "Brasil",
+    18: "Canadá",
+    20: "China",
+    37: "Francia",
+    40: "Alemania",
+    49: "India",
+    55: "Italia",
+    57: "Japón",
+    121: "Reino Unido",
+    122: "Estados Unidos",
   },
   gdp: {
     14: "1.77",
@@ -176,7 +176,7 @@ const myChart = new Chart(ctx, {
     labels: Object.values(winter.country),
     datasets: [
       {
-        label: "Total Medals",
+        label: "Medallas totales en invierno",
         data: Object.values(winter.total),
         backgroundColor: [
           "rgba(206, 232, 230)",
@@ -272,7 +272,7 @@ const myChart2 = new Chart(ctx2, {
     labels: Object.values(winter.country),
     datasets: [
       {
-        label: "Gold Medal Winter",
+        label: "Medallas de oro en invierno",
         data: Object.values(winter.gold),
         backgroundColor: [
           "rgba(206, 232, 230)",
@@ -368,7 +368,7 @@ const myChart3 = new Chart(ctx3, {
     labels: Object.values(winter.country),
     datasets: [
       {
-        label: "Sylver Medal Winter",
+        label: "Medallas de plata en invierno",
         data: Object.values(winter.silver),
         backgroundColor: [
           "rgba(206, 232, 230)",
@@ -464,7 +464,7 @@ const myChart4 = new Chart(ctx4, {
     labels: Object.values(winter.country),
     datasets: [
       {
-        label: "Bronze Medal Winter",
+        label: "Medallas de bronce en invierno",
         data: Object.values(winter.bronze),
         backgroundColor: [
           "rgba(206, 232, 230)",
@@ -560,7 +560,7 @@ const myChart5 = new Chart(ctx5, {
     labels: Object.values(summer.country),
     datasets: [
       {
-        label: "Total Medals",
+        label: "Medallas totales en verano",
         data: Object.values(summer.total),
         backgroundColor: [
           "rgba(206, 232, 230)",
@@ -656,7 +656,7 @@ const myChart6 = new Chart(ctx6, {
     labels: Object.values(summer.country),
     datasets: [
       {
-        label: "Gold Medal Summer",
+        label: "Medallas de oro en verano",
         data: Object.values(summer.gold),
         backgroundColor: [
           "rgba(206, 232, 230)",
@@ -752,7 +752,7 @@ const myChart7 = new Chart(ctx7, {
     labels: Object.values(summer.country),
     datasets: [
       {
-        label: "Silver Medal Summer",
+        label: "Medallas de plata en verano",
         data: Object.values(summer.silver),
         backgroundColor: [
           "rgba(206, 232, 230)",
@@ -848,7 +848,7 @@ const myChart8 = new Chart(ctx8, {
     labels: Object.values(summer.country),
     datasets: [
       {
-        label: "Bronze Medal Summer",
+        label: "Medallas de bronce en verano",
         data: Object.values(summer.bronze),
         backgroundColor: [
           "rgba(206, 232, 230)",
