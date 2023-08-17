@@ -160,17 +160,35 @@ const gdp = {
     122: "3523",
   },
 };
-const ctx = document.getElementById("total-medals__winter");
-const ctx2 = document.getElementById("gold-medals__winter");
-const ctx3 = document.getElementById("silver-medals__winter");
-const ctx4 = document.getElementById("bronze-medals__winter");
-const ctx5 = document.getElementById("total-medals__summer");
-const ctx6 = document.getElementById("gold-medals__summer");
-const ctx7 = document.getElementById("silver-medals__summer");
-const ctx8 = document.getElementById("bronze-medals__summer");
-const ctx9 = document.getElementById("correlation__graph_gdp");
+const totalMedalsWinterContainer = document.getElementById(
+  "total-medals__winter"
+);
+const goldMedalsWinterContainer = document.getElementById(
+  "gold-medals__winter"
+);
+const silverMedalsWinterContainer = document.getElementById(
+  "silver-medals__winter"
+);
+const bronzeMedalsWinterContainer = document.getElementById(
+  "bronze-medals__winter"
+);
+const totalMedalsSummerContainer = document.getElementById(
+  "total-medals__summer"
+);
+const goldMedalsSummerContainer = document.getElementById(
+  "gold-medals__summer"
+);
+const silverMedalsSummerContainer = document.getElementById(
+  "silver-medals__summer"
+);
+const bronzeMedalsSummerContainer = document.getElementById(
+  "bronze-medals__summer"
+);
+const correlationGraphContainer = document.getElementById(
+  "correlation__graph_gdp"
+);
 
-const myChart = new Chart(ctx, {
+const myChart = new Chart(totalMedalsWinterContainer, {
   type: "bar",
   data: {
     labels: Object.values(winter.country),
@@ -266,7 +284,7 @@ const myChart = new Chart(ctx, {
     ],
   },
 });
-const myChart2 = new Chart(ctx2, {
+const myChart2 = new Chart(goldMedalsWinterContainer, {
   type: "doughnut",
   data: {
     labels: Object.values(winter.country),
@@ -362,7 +380,7 @@ const myChart2 = new Chart(ctx2, {
     ],
   },
 });
-const myChart3 = new Chart(ctx3, {
+const myChart3 = new Chart(silverMedalsWinterContainer, {
   type: "polarArea",
   data: {
     labels: Object.values(winter.country),
@@ -458,7 +476,7 @@ const myChart3 = new Chart(ctx3, {
     ],
   },
 });
-const myChart4 = new Chart(ctx4, {
+const myChart4 = new Chart(bronzeMedalsWinterContainer, {
   type: "bar",
   data: {
     labels: Object.values(winter.country),
@@ -554,7 +572,7 @@ const myChart4 = new Chart(ctx4, {
     ],
   },
 });
-const myChart5 = new Chart(ctx5, {
+const myChart5 = new Chart(totalMedalsSummerContainer, {
   type: "bar",
   data: {
     labels: Object.values(summer.country),
@@ -650,7 +668,7 @@ const myChart5 = new Chart(ctx5, {
     ],
   },
 });
-const myChart6 = new Chart(ctx6, {
+const myChart6 = new Chart(goldMedalsSummerContainer, {
   type: "doughnut",
   data: {
     labels: Object.values(summer.country),
@@ -746,7 +764,7 @@ const myChart6 = new Chart(ctx6, {
     ],
   },
 });
-const myChart7 = new Chart(ctx7, {
+const myChart7 = new Chart(silverMedalsSummerContainer, {
   type: "polarArea",
   data: {
     labels: Object.values(summer.country),
@@ -842,7 +860,7 @@ const myChart7 = new Chart(ctx7, {
     ],
   },
 });
-const myChart8 = new Chart(ctx8, {
+const myChart8 = new Chart(bronzeMedalsSummerContainer, {
   type: "bar",
   data: {
     labels: Object.values(summer.country),
@@ -938,7 +956,7 @@ const myChart8 = new Chart(ctx8, {
     ],
   },
 });
-const myChart9 = new Chart(ctx9, {
+const myChart9 = new Chart(correlationGraphContainer, {
   type: "bar",
   data: {
     labels: Object.values(gdp.country),
