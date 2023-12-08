@@ -1,15 +1,15 @@
-# Hackaton deportivo #2 de TripleTen
+# TripleTen's #2 Hackaton
 ## Pixel Perfect Team
 
-### Descripción general
+### General description
   
-**Introducción**    
+**Intro**    
   
-Este proyecto consiste de una landingpage que integra la librería de Chart.js para representar los distintos datos de las Olimpiadas desde 1960.
+This proyect consists of a landing page which integrantes the Chart.js library in order to represent the multiple data from the 1960 Olympics.
 
-**Tecnologías y Técnicas**
+**Tech & Techniques**
 
-Este proyecto se creó utilizando las siguientes tecnologías y técnicas:
+This project was created using the following libraries:
   
   * HTML
   * CSS
@@ -17,7 +17,7 @@ Este proyecto se creó utilizando las siguientes tecnologías y técnicas:
   * Flexbox
   * Chart.js
 
-**Enlaces**   
+**Links**   
 
-* [Enlace a la librería Chart.js](https://www.chartjs.org/docs/4.3.3/)
+* [Link to Chart.js](https://www.chartjs.org/docs/4.3.3/)
   
