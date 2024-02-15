@@ -5,7 +5,7 @@
   
 **Intro**    
   
-This proyect consists of a landing page which integrantes the Chart.js library in order to represent the multiple data from the 1960 Olympics.
+This project consists of a landing page which integrantes the Chart.js library in order to represent the multiple data from the 1960 Olympics.
 
 **Tech & Techniques**
 
